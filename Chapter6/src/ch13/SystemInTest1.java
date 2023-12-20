@@ -1,6 +1,7 @@
 package ch13;
 
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class SystemInTest1 {
 
@@ -11,8 +12,11 @@ public class SystemInTest1 {
 		int i;
 		
 		try {
-			i = System.in.read();
-			System.out.println(i);
+			InputStreamReader irs = new InputStreamReader(System.in);
+			while((i = irs.read()) != '\n') {
+//				System.out.println(i);
+				System.out.print((char) i);
+			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
