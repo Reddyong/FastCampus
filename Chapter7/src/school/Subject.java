@@ -4,6 +4,8 @@ import java.nio.file.attribute.UserDefinedFileAttributeView;
 import java.util.ArrayList;
 import java.util.List;
 
+import utils.Define;
+
 public class Subject {
 	
 	private String subjectName;	// 과목 이름
