@@ -33,7 +33,7 @@ public class GenerateGradeReport {
 	public void makeHeader(Subject subject) {
 		buffer.append(GenerateGradeReport.LINE);
 		buffer.append("\t"+ subject.getSubjectName());
-		buffer.append(GenerateGradeReport.TITLE);
+		buffer.append(GenerateGradeReport.TITLE); 
 		buffer.append(GenerateGradeReport.HEADER);
 		buffer.append(GenerateGradeReport.LINE);
 	}
